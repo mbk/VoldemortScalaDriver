@@ -8,3 +8,8 @@ specify uodate behavior that way. I use it mostly to e.g. add an item to a
 sequence. As in turning List (1,2) -> List (1,2,3) as value for a key.
 
 init -> initializes only when a key doesn't exist, otherwise leave it be.
+
+To compile, run ./sbt
+Then type compile
+
+Enjoy!
