@@ -1,7 +1,7 @@
 /*
  * Cloud backed storage
  * 
- * Copyright (c) 2010-2012, vrijheid.net
+ * Copyright (c) 2010-2016, vrijheid.net
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -168,7 +168,7 @@ package net.vrijheid.vmtalk {
 					debug("key does not exists, creating with default value")
 					try {put(key,versioned)} 
 					catch { 
-						case e => {
+						case e: Throwable => {
 							versioned = get_?(key) match {
 								case Some(v) => v
 								case None => {throw new VoldemortWrapperException}
