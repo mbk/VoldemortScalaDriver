@@ -33,6 +33,7 @@ import voldemort.client._
 import voldemort.store.{InsufficientOperationalNodesException}
 import voldemort.versioning._
 import scala.collection.JavaConversions._
+import scala.language.postfixOps
 
 package net.vrijheid.vmtalk { 
 	
